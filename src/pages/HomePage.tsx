@@ -4,7 +4,6 @@ import FeaturesMediaCards from '@/components/sections/features/FeaturesMediaCard
 import FeaturesRevealCardsBento from '@/components/sections/features/FeaturesRevealCardsBento';
 import HeroOverlayMarquee from '@/components/sections/hero/HeroOverlayMarquee';
 import MetricsFeatureCards from '@/components/sections/metrics/MetricsFeatureCards';
-import PricingLayeredCards from '@/components/sections/pricing/PricingLayeredCards';
 import SocialProofMarquee from '@/components/sections/social-proof/SocialProofMarquee';
 import TestimonialRatingCards from '@/components/sections/testimonial/TestimonialRatingCards';
 import { Shield, Star, Zap } from "lucide-react";
@@ -183,60 +182,6 @@ export default function HomePage() {
     </SectionErrorBoundary>
   </div>
 
-  <div id="pricing" data-section="pricing">
-    <SectionErrorBoundary name="pricing">
-          <PricingLayeredCards
-      tag="Transparent Pricing"
-      title="Select Your Tier"
-      description="Tailored packages for premium digital needs."
-      plans={[
-        {
-          tag: "Essentials",
-          price: "$5,000",
-          description: "Professional web basics.",
-          primaryButton: {
-            text: "Choose Plan",
-            href: "#contact",
-          },
-          features: [
-            "Bespoke design",
-            "Mobile optimized",
-            "Basic SEO",
-          ],
-        },
-        {
-          tag: "Growth",
-          price: "$12,000",
-          description: "Advanced solutions for brands.",
-          primaryButton: {
-            text: "Choose Plan",
-            href: "#contact",
-          },
-          features: [
-            "Custom architecture",
-            "SEO strategy",
-            "Analytics dashboard",
-          ],
-        },
-        {
-          tag: "Enterprise",
-          price: "$25,000+",
-          description: "End-to-end bespoke agency.",
-          primaryButton: {
-            text: "Choose Plan",
-            href: "#contact",
-          },
-          features: [
-            "Strategy & Growth",
-            "Continuous support",
-            "Priority access",
-          ],
-        },
-      ]}
-      textAnimation="slide-up"
-    />
-    </SectionErrorBoundary>
-  </div>
 
   <div id="testimonials" data-section="testimonials">
     <SectionErrorBoundary name="testimonials">
